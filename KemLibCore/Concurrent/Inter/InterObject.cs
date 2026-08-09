@@ -1,4 +1,4 @@
-﻿namespace KLib.Concurrent.Inter
+﻿namespace KemLibCore.Concurrent.Inter
 {
     public class InterObject<T> where T : class
     {

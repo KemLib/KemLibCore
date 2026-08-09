@@ -1,6 +1,6 @@
-﻿using KLib.Concurrent.Inter;
+﻿using KemLibCore.Concurrent.Inter;
 
-namespace KLib.Concurrent.Locker
+namespace KemLibCore.Concurrent.Locker
 {
     public class TicketLock
     {

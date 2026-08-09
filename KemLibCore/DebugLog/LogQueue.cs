@@ -1,6 +1,6 @@
-﻿using KLib.Concurrent.Queue;
+﻿using KemLibCore.Concurrent.Queue;
 
-namespace KLib.DebugLog
+namespace KemLibCore.DebugLog
 {
     public class LogQueue : IQueueOutAll<LogData>
     {
