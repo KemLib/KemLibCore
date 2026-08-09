@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace KLib.DebugLog
+namespace KemLibCore.DebugLog
 {
     public struct LogData
     {

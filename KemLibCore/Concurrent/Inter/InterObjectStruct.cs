@@ -1,4 +1,4 @@
-﻿namespace KLib.Concurrent.Inter
+﻿namespace KemLibCore.Concurrent.Inter
 {
     public struct InterObjectStruct<T> where T : class
     {

@@ -1,4 +1,4 @@
-﻿namespace KLib
+﻿namespace KemLibCore
 {
     public readonly struct Result<T1, T2, T3, T4> : IResult
     {

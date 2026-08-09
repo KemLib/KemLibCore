@@ -1,7 +1,7 @@
-﻿using KLib.Concurrent.Inter;
-using KLib.Concurrent.Locker;
+﻿using KemLibCore.Concurrent.Inter;
+using KemLibCore.Concurrent.Locker;
 
-namespace KLib.Concurrent.Queue
+namespace KemLibCore.Concurrent.Queue
 {
     public class TwiceQueue<T> : IQueueOutAll<T>
     {

@@ -1,4 +1,4 @@
-﻿namespace KLib.DebugLog
+﻿namespace KemLibCore.DebugLog
 {
     public interface ILogHander
     {

@@ -1,8 +1,8 @@
-﻿using KLib.Concurrent.Inter;
-using KLib.Concurrent.Locker;
+﻿using KemLibCore.Concurrent.Inter;
+using KemLibCore.Concurrent.Locker;
 using System.Diagnostics.CodeAnalysis;
 
-namespace KLib.Concurrent.Queue
+namespace KemLibCore.Concurrent.Queue
 {
     public class ConcurrentList<T>
     {

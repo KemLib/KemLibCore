@@ -1,4 +1,4 @@
-﻿namespace KLib.DebugLog
+﻿namespace KemLibCore.DebugLog
 {
     internal class LogHanderNone : ILogHander
     {
