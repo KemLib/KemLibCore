@@ -3,6 +3,9 @@
     public readonly struct Result : IResult
     {
         #region Properties
+        public readonly static IResult ResultSuccess = Success(),
+            ResultFail = Fail(string.Empty);
+
         private readonly bool isSuccess;
         private readonly string error;
 
