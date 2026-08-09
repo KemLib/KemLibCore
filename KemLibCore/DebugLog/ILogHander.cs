@@ -1,4 +1,4 @@
-﻿namespace KLib.LogData
+﻿namespace KLib.DebugLog
 {
     public interface ILogHander
     {

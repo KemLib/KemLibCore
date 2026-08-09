@@ -1,8 +1,8 @@
 ﻿using KLib.Concurrent.Queue;
 
-namespace KLib.LogData
+namespace KLib.DebugLog
 {
-    public class Logger : IQueueOutAll<LogData>
+    public class LogQueue : IQueueOutAll<LogData>
     {
         #region Properties
         private readonly TwiceQueue<LogData> twiceQueue;
@@ -11,7 +11,7 @@ namespace KLib.LogData
         #endregion
 
         #region Constructions
-        public Logger()
+        public LogQueue()
         {
             twiceQueue = new();
         }
@@ -21,12 +21,12 @@ namespace KLib.LogData
         public ILogHander CreateHander()
         {
             IQueueIn<LogData> queueIn = twiceQueue.CreateQueueIn();
-            return new LoggerHander(this, queueIn);
+            return new LogQueueHander(this, queueIn);
         }
         public async Task<ILogHander> CreateHanderAsync()
         {
             IQueueIn<LogData> queueIn = await twiceQueue.CreateQueueInAsync();
-            return new LoggerHander(this, queueIn);
+            return new LogQueueHander(this, queueIn);
         }
         #endregion
 

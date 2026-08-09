@@ -1,6 +1,6 @@
-﻿namespace KLib.LogData
+﻿namespace KLib.DebugLog
 {
-    public class LogHanderNone : ILogHander
+    internal class LogHanderNone : ILogHander
     {
         #region Properties
         public bool IsAvaiable => false;

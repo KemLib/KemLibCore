@@ -1,28 +1,34 @@
 ﻿using KLib.Concurrent.Queue;
 
-namespace KLib.LogData
+namespace KLib.DebugLog
 {
-    public class LoggerHander(Logger logger, IQueueIn<LogData> queueIn) : ILogHander
+    public class LogQueueHander : ILogHander
     {
         #region Properties
-        private readonly Logger logger = logger;
-        private readonly IQueueIn<LogData> queueIn = queueIn;
+        public readonly static ILogHander NONE = new LogHanderNone();
+
+        private readonly LogQueue logQueue;
+        private readonly IQueueIn<LogData> queueIn;
 
         public bool IsAvaiable => queueIn.IsAvailable;
         #endregion
 
         #region Constructions
-
+        internal LogQueueHander(LogQueue logQueue, IQueueIn<LogData> queueIn)
+        {
+            this.logQueue = logQueue;
+            this.queueIn = queueIn;
+        }
         #endregion
 
         #region CreateHander
         public ILogHander CreateHander()
         {
-            return logger.CreateHander();
+            return logQueue.CreateHander();
         }
         public async Task<ILogHander> CreateHanderAsync()
         {
-            return await logger.CreateHanderAsync();
+            return await logQueue.CreateHanderAsync();
         }
         #endregion
 

@@ -1,6 +1,6 @@
 ﻿using KLib.Concurrent.Inter;
 
-namespace KLib.LogData
+namespace KLib.DebugLog
 {
     public class LogHanderCallback : ILogHander
     {
@@ -41,14 +41,7 @@ namespace KLib.LogData
                 return;
             //
             LogData log = new(LogType.Message, source, title, message);
-            try
-            {
-                onLog(log);
-            }
-            catch (Exception)
-            {
-
-            }
+            onLog(log);
         }
         public async Task LogMessageAsync(string? source = null, string? title = null, string? message = null)
         {
@@ -56,14 +49,7 @@ namespace KLib.LogData
                 return;
             //
             LogData log = new(LogType.Message, source, title, message);
-            try
-            {
-                onLog(log);
-            }
-            catch (Exception)
-            {
-
-            }
+            onLog(log);
         }
         public void LogWarning(string? source = null, string? title = null, string? message = null)
         {
@@ -71,14 +57,7 @@ namespace KLib.LogData
                 return;
             //
             LogData log = new(LogType.Warning, source, title, message);
-            try
-            {
-                onLog(log);
-            }
-            catch (Exception)
-            {
-
-            }
+            onLog(log);
         }
         public async Task LogWarningAsync(string? source = null, string? title = null, string? message = null)
         {
@@ -86,14 +65,7 @@ namespace KLib.LogData
                 return;
             //
             LogData log = new(LogType.Warning, source, title, message);
-            try
-            {
-                onLog(log);
-            }
-            catch (Exception)
-            {
-
-            }
+            onLog(log);
         }
         public void LogError(string? source = null, string? title = null, string? message = null)
         {
@@ -101,14 +73,7 @@ namespace KLib.LogData
                 return;
             //
             LogData log = new(LogType.Error, source, title, message);
-            try
-            {
-                onLog(log);
-            }
-            catch (Exception)
-            {
-
-            }
+            onLog(log);
         }
         public async Task LogErrorAsync(string? source = null, string? title = null, string? message = null)
         {
@@ -116,14 +81,7 @@ namespace KLib.LogData
                 return;
             //
             LogData log = new(LogType.Error, source, title, message);
-            try
-            {
-                onLog(log);
-            }
-            catch (Exception)
-            {
-
-            }
+            onLog(log);
         }
         #endregion
     }
