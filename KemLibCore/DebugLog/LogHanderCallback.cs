@@ -1,6 +1,6 @@
-﻿using KLib.Concurrent.Inter;
+﻿using KemLibCore.Concurrent.Inter;
 
-namespace KLib.DebugLog
+namespace KemLibCore.DebugLog
 {
     public class LogHanderCallback : ILogHander
     {

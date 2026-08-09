@@ -1,4 +1,4 @@
-﻿namespace KLib.Concurrent.Locker
+﻿namespace KemLibCore.Concurrent.Locker
 {
     public struct Int32Lock
     {

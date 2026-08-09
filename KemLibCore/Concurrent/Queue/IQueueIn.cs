@@ -1,4 +1,4 @@
-﻿namespace KLib.Concurrent.Queue
+﻿namespace KemLibCore.Concurrent.Queue
 {
     public interface IQueueIn<T>
     {
